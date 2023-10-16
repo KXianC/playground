@@ -12,11 +12,11 @@ def create_df():
 
 
 def run_streamlit(df):
-    st.title('Uber pickups in NYC')
-    st.subheader('Number of pickups by hour')
+    st.title('PoC Demo')
+    st.subheader('test security selector')
 
     add_selectbox = st.sidebar.selectbox(
-        "How would you like to be contacted?",
+        "Which col to show?",
         ['ALL'] + df.columns.to_list(),
     )
  
